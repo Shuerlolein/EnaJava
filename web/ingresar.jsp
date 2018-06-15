@@ -24,14 +24,15 @@
     <div class="col-sm-2">
     </div>
     <div class="col-sm-8">
-        <form action="servlet"method="post">
+        <form action="guardar.jsp" method="get">
             <legend> <h1>Ingresar Requerimiento</h1></legend>
 
               
             <table>
                 <tr>
                     <label>Gerencia: </label>
-                <select class="form-control" name="gerencia">
+                <select class="form-control" id="gerencia"  name="gerencia">
+                    <option>Selecciona</option>
                     <option>Gerencia 1</option>
                     <option>Gerencia 2</option>
                     <option>Gerencia 3</option>
@@ -41,6 +42,7 @@
                 <tr>
                     <label>Departamento: </label>
                 <select class="form-control" name="departamento">
+                    <option>Selecciona</option>
                     <option>Finanzas</option>
                     <option>RRHH</option>
                     <option>Gerencia</option>
@@ -50,6 +52,7 @@
                 <tr>
                     <label>Asignar a: </label>
                 <select class="form-control" name="asignar">
+                    <option>Selecciona</option>
                     <option>Primer nivel</option>
                     <option>Segundo nivel</option>
                     <option>Tercer nivel</option>
@@ -59,6 +62,7 @@
                 <tr>
                     <label>Encargado: </label>
                 <select class="form-control" name="encargado">
+                    <option>Selecciona</option>
                     <option>Pepito</option>
                     <option>Juanito</option>
                     <option>Pedrito</option>

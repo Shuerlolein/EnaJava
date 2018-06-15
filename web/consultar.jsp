@@ -82,7 +82,7 @@
 
             try{
                 Class.forName("com.mysql.jdbc.Driver");
-                Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/enajava","root","");
+                Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/requerimiento","root","");
                 String query="SELECT * FROM requerimiento";
                 Statement st=con.createStatement();
                 ResultSet rs = st.executeQuery(query);
@@ -90,7 +90,6 @@
                 out.println("<th>Gerencia</th>");
                 out.println("<th>Departamento</th>");
                 out.println("<th>Asignado a</th>");
-                out.println("<th>Encargado</th>");
                 out.println("<th>Requerimiento</th>");
                 out.println("<th>Editar</th>");
                 out.println("<th>Borrar</th>");
